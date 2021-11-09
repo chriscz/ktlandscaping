@@ -30,8 +30,11 @@ twitter_username: ""
 github_username:  ""
 
 # Build settings
-markdown: kramdown
-theme: jekyll-theme-basically-basic
+# markdown: kramdown
+# theme: jekyll-theme-basically-basic
+remote_theme: "mmistakes/jekyll-theme-basically-basic@1.4.5"
+#remote_theme: "murraco/jekyll-theme-minimal-resume"
+# theme: minima
 plugins:
   - jekyll-feed
 
@@ -54,3 +57,8 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+author:
+  name: Kushinga Sandura
+  # twitter: johndoetwitter
+  # picture: /assets/images/johndoe.png
