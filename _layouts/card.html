@@ -1,0 +1,16 @@
+<!-- div class="home-card"-->
+<div class="home-card">
+    {% if page.image %}
+        <img src="{{ page.image }}" class="card-img-top {{ page.image_class }}" alt="{{ page.image_alt }}">
+    {% endif %}
+  <div class="card-body">
+    {% if page.heading %}
+        <h4 class="card-title {{ page.title_class }}">{{ page.heading }}</h4>
+    {% endif %}
+
+    <div class="card-text {{ page.body_class }} ">
+        {{ content }}
+    </div>
+    
+  </div>
+</div>

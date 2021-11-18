@@ -1,0 +1,6 @@
+<div class="distributor-logos">
+    {% for supplier in site.data.distributors %}
+    <a href="{{supplier.url}}"><img class="supplier-logo" src="{{supplier.logo | prepend: site.baseurl | replace: '//', '/' }}" alt="{{supplier.name}}"/></a>
+    {% endfor %}
+</div>
+

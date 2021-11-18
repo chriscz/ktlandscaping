@@ -1,0 +1,21 @@
+@import "../assets/vendor/startbootstrap-clean-blog/scss/clean-blog.scss";
+@import "book-now-button.scss";
+@import "cards.scss";
+@import "supplier-carousel.scss";
+
+header.masthead .overlay {
+    opacity: 0.3
+}
+
+body {
+  overflow-x: hidden;
+}
+
+// unhide
+.supplier-logos {
+  display: none;
+}
+
+.distributor-logos {
+  display: none;
+}

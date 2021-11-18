@@ -1,0 +1,66 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "styles";
+
+.container {
+  a {
+    text-decoration: underline;
+  }
+}
+
+.post-content-wrapper {
+  a {
+    text-decoration: underline;
+  }
+}
+
+.page-heading {
+  padding-bottom: 205px !important;
+}
+
+.partner-badge {
+  position: absolute;
+  left: 50%;
+  bottom: 5px;
+}
+
+.partner-badge-gyg {
+  margin-left: -125px;
+}
+
+.partner-badge-gyg img {
+  width: 250px;
+  height: auto;
+}
+
+// https://codepen.io/demoonkevin/pen/MvPEpV
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+
+.whatsapp-float-icon {
+  margin-top: 16px;
+}
+
+.whatsapp-float .whatsapp-float-icon a:hover {
+  text-decoration: none !important;
+  color: white !important;
+}
+
+a:focus.whatsapp-float, a.whatsapp-float {
+  text-decoration: none !important;
+  color: white !important;
+}

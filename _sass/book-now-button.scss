@@ -1,0 +1,19 @@
+.book-now-button {
+  position: fixed;
+  bottom: 60px;
+  right: 10px;
+  height: 50px;
+  background-color: #eb3a34;
+  width: 200px;
+  z-index: 2;
+  border-radius: 8px;
+}
+
+.book-now-button > a {
+  color: white;
+}
+
+.is-fixed #book-now-nav {
+    color: #eb3a34 !important;
+}
+

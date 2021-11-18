@@ -1,0 +1,25 @@
+<!-- Page Header -->
+{% if page.background %}
+<header class="masthead" style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
+{% else %}
+ <header class="masthead">
+{% endif %}
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            {% if site.hide_background_title == false %}
+            <h1>{{ site.title }}</h1>
+            {% else if page.background_title_logo %}
+                <img style="height: {{page.background_title_logo_height | default: site.jumbotron_logo_height }}" src="{{page.background_title_logo | prepend: site.baseurl | replace: '//', '/' }}"/>
+            {% endif %}
+
+            {% if site.description %}
+                <span class="subheading"><b>{{ site.description }}</b></span>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>

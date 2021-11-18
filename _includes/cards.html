@@ -1,0 +1,15 @@
+<div>
+{% assign groups = site.home_tiles | size | divided_by: 2 %}
+{% for i in (0..groups) %}
+    {% assign first = i | times:2 %}
+
+    <div class="row">
+        {% for tile in site.home_tiles offset:first limit:2 %} 
+            <div class="col-lg-6 col-md-6 mx-auto">
+                {{ tile.output }}
+            </div>
+        {% endfor %}
+    </div>
+
+{% endfor %}
+</div>
